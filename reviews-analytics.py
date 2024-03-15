@@ -23,3 +23,10 @@ for d in data:
 		new.append(d)  # append前面要是清單
 print('一共有', len(new), '筆留言長度小於100個字')
 print(new[0])
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('留言中有good的評論共有', len(good), '筆')
+print(good[0])
